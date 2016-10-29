@@ -121,7 +121,7 @@ int main()
 	{
 		set<string>cur=apriori_gen(prev,i-1);										//generating candidate sets from previons itemsets...
 		
-		if(cur.size()<=1)break;
+		if(cur.size()<1)break;
 		for(set<string>::iterator it=cur.begin();it!=cur.end();it++)
 		{
 			
